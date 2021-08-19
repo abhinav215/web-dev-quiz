@@ -1,0 +1,137 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+:root{
+  --background:blueviolet;
+  --next:rgb(130, 49, 223);
+  --next-hover:rgb(196, 61, 102);
+  --bottom-region:thistle;
+  --timer:violet;
+  --heading:white;
+}
+
+body{
+  background-image: linear-gradient(to bottom right, rgb(145, 84, 216), rgb(196, 61, 102));
+  height: 100vh;
+  width: 100vw;
+}
+
+#quiz{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.heading{
+  width:90%;
+  height:60px;
+  display:flex;
+  flex-direction: row;
+  background-color: var(--heading);
+  justify-content: space-between;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#welcome{
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  margin:auto 15px;
+  padding-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.timer{
+  background-color: var(--timer);
+  width:100px;
+  padding-top: 10px;
+  font-size: 25px;
+  margin:5px;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+
+#bottom{
+  height:80vh;
+  width: 90%;
+  background-color: var(--bottom-region);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+h2{
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding:20px;
+}
+
+.opt{
+  font-weight: 300;
+  font-size: 1rem;
+  padding:10px 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+
+ul {
+  list-style: square inside ;
+  padding:0 10px;
+  list-style-type:none;
+}
+
+
+li{
+  overflow-wrap: break-word;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin:5px 0;
+  padding: 10px 10px;
+  background-color: white;
+  width:500px;
+  border-radius: 50px;
+  border:2px solid rgb(170, 168, 168);
+  transition: all 0.4s ease;
+}
+
+
+.active{
+  background-color: blueviolet;
+  color:white;
+}
+
+li:hover,
+.next:hover{
+  border: solid black 2px;
+}
+
+.next{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin:40px 0 30px 60px;
+  padding: 10px 10px;
+  background-color: var(--next);
+  width:200px;
+  border-radius: 50px;
+  border:2px solid grey;
+  color:white;
+  transition: all 0.4s ease;
+}
+
+.next:hover{
+  background-color: var(--next-hover);
+}

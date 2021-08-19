@@ -1,0 +1,128 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+:root{
+  --background:blueviolet;
+  --button:rgb(211, 180, 243);
+  --button-border-text:rgb(52, 4, 97);
+}
+
+body{
+  background-image: linear-gradient(to bottom right, rgb(145, 84, 216), rgb(196, 61, 102));
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:100vw;
+  height: 100vh;
+}
+
+.form-quiz{
+  width: 500px;   
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#welcome{
+  width: 500px;   
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hello{
+  color:white;
+  font-size: 5rem;
+  font-weight:600;
+  margin:30px 0;
+  text-shadow: 0 0 3px #660202, 0 0 5px #010150;
+}
+
+.botan{
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: var(--button);
+  color:var(--button-border-text);
+  padding:15px 110px;
+  margin:10px 0;
+  border-radius: 50px;
+  cursor: pointer;
+  border:var(--button-border-text) 5px solid;
+  text-decoration: none;
+  animation: all 0.4s;
+}
+
+
+#username{
+  width:500px;
+  height:50px;
+  padding:10px 10px;
+  margin: 20px 0;
+  font-size: 30px;
+  border: 2px solid rgb(52, 4, 97);
+  border-radius: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.botan:focus,
+.username:focus{
+  outline: none;
+}
+
+.botan:hover{
+  transform: translateY(-5px);
+  background-color: rgb(167, 196, 216);
+}
+
+
+.pin{
+  background-color: goldenrod;
+  position:relative;
+  width: 20px;
+  height:20px;
+  border-radius: 50%;
+  z-index:10;
+  left:50%;
+  transform: translateX(-50%);
+  margin: 4px;
+}
+
+.rule-box{
+  background:white;
+  width:300px;
+  height:auto;
+  margin: 20px 0;
+  border-radius: 10px;
+  border: rgb(94, 8, 79) 3px solid;
+}
+
+
+.rule-box h6{
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "Grenze Gotisch",cursive;
+}
+
+ul {
+  list-style: square inside ;
+  padding:0px 20px;
+  list-style-type: circle;
+}
+
+li{
+  overflow-wrap: break-word;
+  font-weight: 500;
+  font-size: 1rem;
+  margin:5px 0px;
+}
