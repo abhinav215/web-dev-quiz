@@ -168,3 +168,7 @@ function toggleActive(){
     }
   } 
 }
+
+function restarting(){
+  window.location.href="index.html";
+}
