@@ -52,3 +52,10 @@ h3{
 span{
   text-shadow: 0 0 3px #660202, 0 0 5px #010150;
 }
+
+
+label{
+  color: white;
+  transform: translateY(20px);
+  padding-top:30px;
+}
